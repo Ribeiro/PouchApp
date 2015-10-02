@@ -61,7 +61,7 @@ example.factory('PouchDBListener', ['$rootScope', function($rootScope) {
 
          });
 
-    remoteDB.allDocs({
+    localDB.allDocs({
                       include_docs: true,
                       attachments: true
                     }).then(function (result) {
