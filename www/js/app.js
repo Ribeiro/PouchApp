@@ -32,11 +32,11 @@ example.factory('PouchDBListener', ['$rootScope', function($rootScope) {
                               $rootScope.$broadcast('add', doc);
                             }
 
-                        })
+                        });
 
                     });
 
-                })
+                });
 
             } else {
                 $rootScope.$apply(function() {
@@ -103,7 +103,7 @@ example.controller("ExampleController", function($scope, $ionicPopup, PouchDBLis
                 alert("Please, enter TODO´s title !");
             }
         });
-    }
+    };
 
     $scope.$on('add', function(event, todo) {
         $scope.todos.push(todo);
